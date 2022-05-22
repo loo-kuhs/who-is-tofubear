@@ -1,26 +1,31 @@
 import React from "react";
 import "./portfolio.css";
 import imgPlaceHolder from "../../assets/placeholder-img.png";
+import imgLandingPage from "../../assets/landingPage_01.png";
+import imgMoviesApp from "../../assets/movies_AndroidApp.jpg";
 
 const data = [
   {
     id: 1,
-    image: imgPlaceHolder,
-    title: "Portfolio Item",
-    repo: "https://github.com",
-    demo: "https://github.com",
+    image: imgLandingPage,
+    title: "Personal Landing Page",
+    repoName: "GitHub",
+    repo: "https://github.com/tGraffe/test",
+    demo: "https://test-aboutlucas.web.app/",
   },
   {
     id: 2,
-    image: imgPlaceHolder,
-    title: "Portfolio Item",
-    repo: "https://github.com",
-    demo: "https://github.com",
+    image: imgMoviesApp,
+    title: "Movies, Android App",
+    repoName: "Bitbucket",
+    repo: "https://bitbucket.org/lucasB_py/peliculasactivity/src/master/",
+    demo: "https://bitbucket.org/lucasB_py/peliculasactivity/src/master/",
   },
   {
     id: 3,
     image: imgPlaceHolder,
     title: "Portfolio Item",
+    repoName: "Github",
     repo: "https://github.com",
     demo: "https://github.com",
   },
@@ -28,6 +33,7 @@ const data = [
     id: 4,
     image: imgPlaceHolder,
     title: "Portfolio Item",
+    repoName: "Github",
     repo: "https://github.com",
     demo: "https://github.com",
   },
@@ -35,6 +41,7 @@ const data = [
     id: 5,
     image: imgPlaceHolder,
     title: "Portfolio Item",
+    repoName: "Github",
     repo: "https://github.com",
     demo: "https://github.com",
   },
@@ -42,6 +49,7 @@ const data = [
     id: 6,
     image: imgPlaceHolder,
     title: "Portfolio Item",
+    repoName: "Github",
     repo: "https://github.com",
     demo: "https://github.com",
   },
@@ -54,21 +62,17 @@ const Portfolio = () => {
       <h2>Portfolio</h2>
 
       <div className="container portfolio__container">
-        {data.map(({ id, image, title, repo, demo }) => {
+        {data.map(({ id, image, title, repoName, repo, demo }) => {
           return (
             <article key={id} className="portfolio__item">
               <div className="portfolio__item-image">
-                <img src={imgPlaceHolder} alt={title} />
+                <img src={image} alt={title} />
                 <h3>{title}</h3>
                 <div className="portfolio__item-cta">
                   <a href={repo} className="btn" target="_blank">
-                    Github
+                    {repoName}
                   </a>
-                  <a
-                    href={demo}
-                    className="btn btn-primary"
-                    target="_blank"
-                  >
+                  <a href={demo} className="btn btn-primary" target="_blank">
                     Live Demo
                   </a>
                 </div>

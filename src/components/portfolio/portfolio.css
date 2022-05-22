@@ -17,9 +17,15 @@
     background: transparent;
 }
 
-.portfolio__item-image {
+.portfolio__item-image img {
     border-radius: 1.5rem;
     overflow: hidden;
+    max-width: 100%;
+    height: auto;
+}
+
+.portfolio__item-image img:hover {
+    transform: scaleX(-1);
 }
 
 .portfolio__item h3 {
@@ -31,6 +37,7 @@
     display: flex;
     gap: 1rem;
     margin-bottom: 1rem;
+    justify-content: center;
 }
 
 /* MEDIA QUERIES (MEDIUM DEVICES) */
