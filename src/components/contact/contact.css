@@ -53,6 +53,9 @@ input, textarea {
     color: var(--color-white);
 }
 
+input::placeholder, textarea::placeholder{
+    color: var(--color-primary);
+}
 /* MEDIA QUERIES (MEDIUM DEVICES) */
 @media screen and (max-width: 1024px) {
     .container.contact__container {
