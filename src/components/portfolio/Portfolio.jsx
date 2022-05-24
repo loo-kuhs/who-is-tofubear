@@ -1,8 +1,9 @@
 import React from "react";
 import "./portfolio.css";
 import imgPlaceHolder from "../../assets/placeholder-img.png";
-import imgLandingPage from "../../assets/landingPage_01.png";
-import imgMoviesApp from "../../assets/movies_AndroidApp.jpg";
+import imgLandingPage from "../../assets/landingPage_01landingPage_01_800px.jpeg";
+import imgMoviesApp from "../../assets/movies_AndroidApp_800px.jpeg";
+import imgCiphersPage from "../../assets/ciphersPage_01_800px.jpeg"
 
 const data = [
   {
@@ -23,11 +24,11 @@ const data = [
   },
   {
     id: 3,
-    image: imgPlaceHolder,
-    title: "Portfolio Item",
-    repoName: "Github",
-    repo: "https://github.com",
-    demo: "https://github.com",
+    image: imgCiphersPage,
+    title: "Ceasar & Polybius Cipher",
+    repoName: "Bitbucket",
+    repo: "https://bitbucket.org/lucasB_py/cipher/src/5e3654bf5e7ae75981b48ccc90ff54b27d23177e/?at=origin%2Fmaster",
+    demo: "https://ciphers-team4.web.app/",
   },
   {
     id: 4,
