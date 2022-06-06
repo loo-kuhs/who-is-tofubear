@@ -11,8 +11,8 @@
 # production
 /build
 
-# deploy
-/.firebase
+# deploy or hosting
+/.firebase/.cache
 
 # misc
 .DS_Store
