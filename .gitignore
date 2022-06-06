@@ -12,7 +12,7 @@
 /build
 
 # deploy or hosting
-/.firebase/.cache
+.firebase/
 
 # misc
 .DS_Store
